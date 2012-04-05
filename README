@@ -1,0 +1,14 @@
+MUQuery - MarkUpQuery
+An extendable library to allow creating HTML in a context similar to jQuery
+
+Example:
+$HTML = new MUQuery();
+
+$page_content .= $HTML->form('/editor/news_edit_update/' . $page . '/')
+			->id('ci_admin_edit_form')
+			->addClass('simpleForm')
+			->attr('style', 'width:600px;')
+			->label('submit', ' ')
+			->input('submit', 'submit', 'Submit')
+			->close()
+			->get();
